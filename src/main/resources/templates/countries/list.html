@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{layout :: body}">
+<body>
+<h2>Countries</h2>
+<a th:href="@{/countries/add}">Add country</a>
+<table border="1" cellpadding="6">
+    <tr><th>ID</th><th>Name</th><th>Code</th><th>Actions</th></tr>
+    <tr th:each="c : ${countries}">
+        <td th:text="${c.id}"></td>
+        <td th:text="${c.name}"></td>
+        <td th:text="${c.code}"></td>
+        <td>
+            <a th:href="@{|/countries/${c.id}/edit|}">Edit</a> |
+            <a th:href="@{|/countries/${c.id}/delete|}" onclick="return confirm('Delete?')">Delete</a>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

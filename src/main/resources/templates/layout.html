@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Demo</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}"/>
+</head>
+<body>
+<header>
+    <a th:href="@{/}">Home</a> |
+    <a th:href="@{/countries}">Countries</a> |
+    <a th:href="@{/items}">Items</a>
+</header>
+<hr/>
+<div th:insert="~{::body}"></div>
+</body>
+</html>

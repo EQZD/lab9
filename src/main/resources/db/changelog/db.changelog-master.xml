@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.27.xsd">
+
+    <include file="changes/01-create-countries.xml" relativeToChangelogFile="true"/>
+    <include file="changes/02-create-items.xml" relativeToChangelogFile="true"/>
+    <include file="changes/03-add-fk-items-country.xml" relativeToChangelogFile="true"/>
+    <include file="changes/04-insert-countries.xml" relativeToChangelogFile="true"/>
+    <include file="changes/05-insert-items.xml" relativeToChangelogFile="true"/>
+
+</databaseChangeLog>
