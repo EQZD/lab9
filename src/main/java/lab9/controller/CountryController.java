@@ -33,19 +33,21 @@ public class CountryController {
     }
 
     @GetMapping("/{id}/edit")
-    public String editForm(@PathVariable Long id, Model model) {
-        model.addAttribute("country", service.get(id));
+    public String editForm(@PathVariable("id") Long id, Model model) {
+        var dto = service.get(id);
+        model.addAttribute("country", dto);
         return "countries/form";
     }
 
     @PostMapping("/{id}/edit")
-    public String edit(@PathVariable Long id, @ModelAttribute("country") @Valid CountryDto dto) {
-        service.update(id, dto);
+    public String edit(@PathVariable("id") Long id,
+                       @ModelAttribute("country") @Valid CountryDto dto) {
+        var updated = service.update(id, dto);
         return "redirect:/countries";
     }
 
     @GetMapping("/{id}/delete")
-    public String delete(@PathVariable Long id) {
+    public String delete(@PathVariable("id") Long id) {
         service.delete(id);
         return "redirect:/countries";
     }
