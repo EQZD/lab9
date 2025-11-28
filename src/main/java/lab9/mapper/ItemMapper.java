@@ -10,7 +10,6 @@ public interface ItemMapper {
     @Mapping(source = "manufacturer.id", target = "manufacturerId")
     ItemDto toDto(Item entity);
 
-    @InheritInverseConfiguration
-    @Mapping(target = "manufacturer", ignore = true)
+    @Mapping(source = "manufacturerId", target = "manufacturer.id")
     Item toEntity(ItemDto dto);
 }
