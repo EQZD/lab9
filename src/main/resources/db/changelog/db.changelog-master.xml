@@ -5,10 +5,10 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                             http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.27.xsd">
 
-    <include file="changes/01-create-countries.xml" relativeToChangelogFile="true"/>
-    <include file="changes/02-create-items.xml" relativeToChangelogFile="true"/>
-    <include file="changes/03-add-fk-items-country.xml" relativeToChangelogFile="true"/>
-    <include file="changes/04-insert-countries.xml" relativeToChangelogFile="true"/>
-    <include file="changes/05-insert-items.xml" relativeToChangelogFile="true"/>
+    <include file="changes/2025-11-28-2-40-00-create-countries.xml" relativeToChangelogFile="true"/>
+    <include file="changes/2025-11-28-2-53-00-create-items.xml" relativeToChangelogFile="true"/>
+    <include file="changes/2025-11-28-2-59-00-add-fk-items-country.xml" relativeToChangelogFile="true"/>
+    <include file="changes/2025-11-28-3-12-00-insert-countries.xml" relativeToChangelogFile="true"/>
+    <include file="changes/2025-11-28-3-15-00-insert-items.xml" relativeToChangelogFile="true"/>
 
 </databaseChangeLog>
