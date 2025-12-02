@@ -8,21 +8,21 @@
     <changeSet id="5-insert-items" author="akim" runOnChange="false">
         <insert tableName="items">
             <column name="name" value="Laptop"/>
-            <column name="price" valueNumeric="350000"/>
+            <column name="price" valueNumeric="1000"/>
             <column name="quantity" valueNumeric="5"/>
-            <column name="manufacturer_id" valueNumeric="3"/>
-        </insert>
-        <insert tableName="items">
-            <column name="name" value="Phone"/>
-            <column name="price" valueNumeric="150000"/>
-            <column name="quantity" valueNumeric="10"/>
             <column name="manufacturer_id" valueNumeric="1"/>
         </insert>
         <insert tableName="items">
-            <column name="name" value="Headphones"/>
-            <column name="price" valueNumeric="50000"/>
-            <column name="quantity" valueNumeric="20"/>
+            <column name="name" value="Laptop-2"/>
+            <column name="price" valueNumeric="10000"/>
+            <column name="quantity" valueNumeric="10"/>
             <column name="manufacturer_id" valueNumeric="2"/>
+        </insert>
+        <insert tableName="items">
+            <column name="name" value="Laptop-3"/>
+            <column name="price" valueNumeric="100000"/>
+            <column name="quantity" valueNumeric="15"/>
+            <column name="manufacturer_id" valueNumeric="3"/>
         </insert>
     </changeSet>
 

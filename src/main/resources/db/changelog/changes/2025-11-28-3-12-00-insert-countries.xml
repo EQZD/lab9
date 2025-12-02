@@ -7,16 +7,16 @@
 
     <changeSet id="4-insert-countries" author="akim" runOnChange="false">
         <insert tableName="countries">
-            <column name="name" value="China"/>
-            <column name="code" value="CN"/>
+            <column name="name" value="Country1"/>
+            <column name="code" value="Cn1"/>
         </insert>
         <insert tableName="countries">
-            <column name="name" value="Germany"/>
-            <column name="code" value="DE"/>
+            <column name="name" value="Gountry2"/>
+            <column name="code" value="Cn2"/>
         </insert>
         <insert tableName="countries">
-            <column name="name" value="USA"/>
-            <column name="code" value="US"/>
+            <column name="name" value="Country3"/>
+            <column name="code" value="Cn3"/>
         </insert>
     </changeSet>
 
